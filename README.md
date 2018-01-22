@@ -1,6 +1,6 @@
 # Perch Auto-collapsable Dividers
 
-This Addon for [Perch](grabaperch.com) makes it possible for dividers to initially be collapsed. 
+This Addon for [Perch](htpp://grabaperch.com) makes it possible for dividers to initially be collapsed. 
 Normally field dividers in Perch templates are all open. This takes a lot of screenspace for fields that are not used that often.
 
 Also you can add end-dividers. 
