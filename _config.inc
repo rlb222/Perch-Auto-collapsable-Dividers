@@ -2,11 +2,12 @@
 // Add this script to /perch/addons/plugins/ui/
 // Download Arrive.min.js and also put it in /perch/addons/plugins/ui/ .
 
-// About Arrive.js 
+
+// ABOUT: Arrive.js 
 // will check if elements are already added to the Dom 
 // GitHub https://github.com/uzairfarooq/arrive
 
-// Note: 
+// NOTE:
 // instead of using 
 //   $(document).arrive(..., function() { 
 // Drew McLellan suggested to use 
@@ -14,7 +15,8 @@
 // But I can't get this line to start. 
 
 // TODO:
-// Only hide empty field, not filled ones.  
+// - Only hide empty field, not filled ones.
+// - Add CSS class, to be able to distinguish pre-collapsed fields via CSS  
 
 
 <script type="text/javascript" src="/perch/addons/plugins/ui/arrive.min.js"></script>
