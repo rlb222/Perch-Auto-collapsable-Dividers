@@ -36,8 +36,10 @@ I would like to add some code to determine if the divider fields are initially f
     <img
       class="foto" 
       style="max-width: 374px" 
-      src  ="<perch:content id="alineaimage" type="image" label="Foto" divider-before="collapse-start|Optionele foto" />"        
-      alt  ="<perch:content id="FotoOms" type="text" label="Foto Omschrijving" divider-after="collapse-end|Dummy divider - End of collapse"/>" 
+      src  ="<perch:content id="alineaimage" type="image" 
+                    label="Foto" divider-before="collapse-start|Optionele foto" />"        
+      alt  ="<perch:content id="FotoOms" type="text" 
+                    label="Foto Omschrijving" divider-after="collapse-end|Dummy divider - End of collapse"/>" 
     /> 
 </perch:if>
 
