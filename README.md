@@ -5,7 +5,7 @@ Normally field dividers in Perch templates are all open. This takes a lot of scr
 
 Also you can add end-dividers. 
 These end-dividers are then hidden in the admin interface. There purpose is to be able to define the end of a divider section.
-Normally a divider range it from the divider to another divider or to the end of the template. With the invisible end-divider you can determine the complete range of a divider without adding unnecessary dividers.
+Normally a divider ranges from the divider to another divider or to the end of the template. With the invisible end-divider you can determine the complete range of a divider without adding unnecessary dividers in the user interface.
 
 ### How to install
 1. Download `Arrive.js` from https://github.com/uzairfarooq/arrive
@@ -14,19 +14,16 @@ Normally a divider range it from the divider to another divider or to the end of
 
 
 ### How it works
-The ui script looks for a keyword ('collapse-start') in the name of the divider and inserts into the DOM, the standard Perch code to collapse the divider.
-It then looks for ('collapse-end') to make that divider element invisible.
+The ui script looks for a keyword ('collapse-start') in the name of the divider. It inserts the standard Perch snippet to collapse the divider.
+It also looks for ('collapse-end') to make that divider element invisible.
 
 ### Why using Arrive.js
-The arrive.min.js is needed, because without it the script will not see the extra  
-`(div class="divider-collapsed")`  
-element that is added later.
-I have also used a time-delay, but I think this is more stable. There also was a suggestion to make use of a custom Perch Event which adds the `div.divider-collapsed` with the code:  
- `$(window).on('Perch_Init_Editors', function(){`  
+The arrive.min.js is needed, because without it the script will not see the extra `(div class="divider-collapsed")` element that is added later into the page by Perch code.  
+I have also used a time-delay, but I think this is more stable. There also was a suggestion to make use of a custom Perch Event which adds the `div.divider-collapsed` with the code: `$(window).on('Perch_Init_Editors', function(){`  
 sadly I couldn't get this to work. 
 
 ### TODO   
-I would like to add some code to determine if the divider fields are initially filled. And not collapse fields which are filled.  
+I would like to add some code to determine if the divider fields are initially filled and leave these areas visible instead of collapsing them.  
 
 
 ## Example use in your Perch template file
