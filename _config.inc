@@ -35,9 +35,11 @@ $(document).arrive("div.divider-collapse-zone", function() {
         //  just like the standard Perch_init_editors behaviour - so standard behaviour can take over after initial collapse.
         $metaDividerStart.addClass('divider-collapsed').next().css('display', 'none');
         $metaDividerEnd.css('display', 'none');
-        // Remove the keyword 'collapse|' from the text on screen
-        var newHTML = $('div', $metaDividerStart).html().replace('collapse-start|', '');
-        $('div', $metaDividerStart).html(newHTML);                         
+        // Remove the keyword 'collapse|' individually from each of the Perch-dividers
+        $metaDividerStart.each(function(i, divider){ 
+            var newHTML = $('div', $(divider)).html().replace('collapse-start|', '');
+            $('div', $(divider)).html(newHTML);                         
+        })
     }  
 });
 </script>
