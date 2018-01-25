@@ -2,17 +2,9 @@
 // Add this script to /perch/addons/plugins/ui/
 // Download Arrive.min.js and also put it in /perch/addons/plugins/ui/ .
 
-
 // ABOUT: Arrive.js 
 // will check if elements are already added to the Dom 
 // GitHub https://github.com/uzairfarooq/arrive
-
-// NOTE:
-// instead of using 
-//   $(document).arrive(..., function() { 
-// Drew McLellan suggested to use 
-//   $(window).on('Perch_Init_Editors', function(){
-// But I can't get this line to start. 
 
 // TODO:
 // - Only hide empty field, not filled ones.

@@ -23,7 +23,11 @@ I have also used a time-delay, but I think this is more stable. There also was a
 sadly I couldn't get this to work. 
 
 ### TODO   
-I would like to add some code to determine if the divider fields are initially filled and leave these areas visible instead of collapsing them.  
+- Check if the divider fields are initially filled and leave these areas visible instead of collapsing them.  
+- Add a class so you can style these special dividers.
+
+### Thanks to
+Robert Ketter and Shane Lenzen for pointing out the way to go about solving this.
 
 
 ## Example use in your Perch template file
